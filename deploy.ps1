@@ -25,7 +25,7 @@ $remoteUrl = "https://" + $Username + ":" + $Token + "@github.com/" + $Username 
 
 # 4. 推送到 GitHub
 Write-Host "正在推送到 GitHub..." -ForegroundColor Yellow
-$pushResult = & "C:/Program Files/Git/cmd/git.exe" push -u origin main 2>&1
+$pushResult = & "C:/Program Files/Git/cmd/git.exe" push -u origin master 2>&1
 Write-Host $pushResult
 
 # 5. 启用 GitHub Pages

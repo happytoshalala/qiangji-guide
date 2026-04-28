@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年广东省强基计划高校信息汇总（物理类）</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--primary:#1a237e;--primary-light:#3949ab;--accent:#ff6d00;--bg:#f0f2f5;--card-bg:#fff;--text:#333;--text-light:#666;--border:#e0e0e0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:-apple-system,"Microsoft YaHei","PingFang SC","Helvetica Neue",sans-serif;background:var(--bg);color:var(--text);line-height:1.75;font-size:15px}
+
+/* ====== Layout ====== */
+.page-wrapper{display:flex;max-width:1500px;margin:0 auto;gap:0;align-items:flex-start}
+/* Sidebar Nav */
+.sidebar-nav{position:sticky;top:0;width:260px;min-width:260px;height:100vh;overflow-y:auto;background:linear-gradient(180deg,var(--primary),#283593);color:#fff;padding:24px 16px;z-index:100;flex-shrink:0;border-radius:0 16px 16px 0}
+.sidebar-nav .nav-logo{text-align:center;padding:20px 0 16px;border-bottom:1px solid rgba(255,255,255,.15);margin-bottom:18px}
+.sidebar-nav .nav-logo .logo-icon{font-size:36px;display:block;margin-bottom:8px}
+.sidebar-nav .nav-logo .logo-text{font-size:14px;font-weight:600;opacity:.85;line-height:1.5}
+.nav-group{margin-bottom:12px}
+.nav-group-title{font-size:11px;text-transform:uppercase;letter-spacing:2px;opacity:.45;font-weight:700;padding:6px 10px 4px}
+.nav-item{display:block;padding:9px 12px;color:rgba(255,255,255,.78);text-decoration:none;border-radius:8px;font-size:13.5px;transition:all .2s;cursor:pointer;border-left:3px solid transparent;margin:2px 0}
+.nav-item:hover{background:rgba(255,255,255,.1);color:#fff;border-left-color:var(--accent)}
+.nav-item.active{background:rgba(255,255,255,.15);color:#fff;font-weight:600;border-left-color:var(--accent)}
+.nav-item .nav-num{display:inline-block;width:22px;text-align:center;background:rgba(255,255,255,.12);border-radius:50%;font-size:11px;margin-right:6px;font-weight:700}
+/* Main Content */
+.main-content{flex:1;min-width:0;padding:20px 24px 40px;max-width:1200px}
+
+/* Header */
+.header{background:linear-gradient(135deg,#1a237e,#3949ab,#5c6bc0);color:#fff;padding:42px 32px;border-radius:16px;text-align:center;margin-bottom:24px;box-shadow:0 8px 32px rgba(26,35,126,.25);position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-50%;right:-20%;width:400px;height:400px;background:radial-gradient(circle,rgba(255,255,255,.08) 0,transparent 70%);pointer-events:none}
+.header h1{font-size:27px;margin-bottom:10px;font-weight:800;letter-spacing:1px}
+.header .subtitle{font-size:15.5px;opacity:.88}
+.header .header-tags{margin-top:16px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.header .htag{background:rgba(255,255,255,.15);padding:5px 14px;border-radius:20px;font-size:12.5px;backdrop-filter:blur(4px)}
+
+/* Section Card */
+.section{background:#fff;border-radius:16px;padding:32px;margin-bottom:24px;box-shadow:0 2px 16px rgba(0,0,0,.05);position:relative;transition:box-shadow .3s}
+.section:hover{box-shadow:0 4px 24px rgba(0,0,0,.08)}
+.section::before{content:attr(data-section);position:absolute;top:-11px;left:24px;background:var(--primary);color:#fff;font-size:11px;font-weight:700;padding:3px 12px;border-radius:20px;letter-spacing:.5px}
+.section h2{font-size:21px;color:var(--primary);padding-left:0;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.section h2 .sec-icon{font-size:24px}
+.section h3{font-size:17px;color:#283593;margin:22px 0 13px;padding-left:14px;border-left:3.5px solid #7986cb}
+.section h4{font-size:15px;color:#3949ab;margin:14px 0 9px}
+
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:24px}
+.card{background:#fff;border-radius:14px;padding:22px 18px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:4px solid var(--primary-light);transition:transform .3s,box-shadow .3s;position:relative;overflow:hidden}
+.card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--primary-light),var(--accent));opacity:0;transition:opacity .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 8px 28px rgba(57,73,171,.15)}
+.card:hover::after{opacity:1}
+.card-num{font-size:38px;font-weight:800;color:var(--primary)}
+.card-label{font-size:13px;color:var(--text-light);margin-top:4px;font-weight:600}
+.card-sub{font-size:11.5px;color:#999;margin-top:3px;line-height:1.5}
+
+/* FAQ */
+.faq-section{background:#fff;border-radius:16px;padding:32px;margin-bottom:24px;box-shadow:0 2px 16px rgba(0,0,0,.05)}
+.faq-section h2{font-size:21px;color:var(--primary);margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.faq-item{margin-bottom:14px;border:1px solid #e8eaf6;border-radius:12px;overflow:hidden;transition:all .3s}
+.faq-q{background:linear-gradient(90deg,#e8eaf6,#f5f5ff);padding:15px 20px;font-weight:700;color:var(--primary);cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:15.5px;user-select:none;transition:background .25s}
+.faq-q:hover{background:linear-gradient(90deg,#d5d9ed,#ececff)}
+.faq-q::after{content:"+";font-size:22px;color:var(--primary-light);transition:transform .3s;font-weight:300;flex-shrink:0;margin-left:12px}
+.faq-item.open .faq-q::after{content:"×";transform:scale(1.2)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s ease;padding:0 20px}
+.faq-item.open .faq-a{max-height:900px;padding:16px 20px;background:#fafbff;border-top:1px solid #e8eaf6}
+.faq-a p{margin-bottom:10px;color:#555}
+.faq-a strong{color:var(--primary)}
+.faq-a ul,.faq-a ol{padding-left:20px;margin:8px 0}
+.faq-a li{margin:5px 0}
+
+/* Tip Boxes */
+.tip-box{padding:13px 18px;border-radius:10px;margin:12px 0;font-size:14px;line-height:1.7}
+.tip-box strong{font-weight:700}
+.tip-orange{background:linear-gradient(135deg,#fff8e1,#ffe0b2);border-left:4px solid #ff9800;color:#e65100}
+.tip-red{background:linear-gradient(135deg,#fce4ec,#f8bbd0);border-left:4px solid #e91e63;color:#c2185b}
+.tip-blue{background:linear-gradient(135deg,#e3f2fd,#bbdefb);border-left:4px solid #1976d2;color:#1565c0}
+.tip-green{background:linear-gradient(135deg,#e8f5e9,#c8e6c9);border-left:4px solid #43a047;color:#2e7d32}
+.tip-purple{background:linear-gradient(135deg,#f3e5f5,#e1bee7);border-left:4px solid #8e24aa;color:#6a1b9a}
+
+/* Table */
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:10px;border:1px solid #eeeef2}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{background:linear-gradient(135deg,var(--primary),var(--primary-light));color:#fff;padding:12px 10px;text-align:left;white-space:nowrap;position:sticky;top:0;z-index:2;font-weight:600;letter-spacing:.3px}
+th:first-child{border-radius:8px 0 0 0}th:last-child{border-radius:0 8px 0 0}
+td{padding:11px 10px;border-bottom:1px solid #f0f0f4;vertical-align:top}
+tr:hover td{background:#f5f7ff}
+tr:nth-child(even) td{background:#fafbff}
+tr:nth-child(even):hover td{background:#eef0fa}
+
+/* Tags */
+.tag{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11.5px;font-weight:600;margin:2px 2px;white-space:nowrap}
+.tag-blue{background:#e8eaf6;color:#1a237e}.tag-green{background:#e8f5e9;color:#2e7d32}.tag-orange{background:#fff3e0;color:#e65100}.tag-red{background:#fce4ec;color:#c2185b}.tag-purple{background:#f3e5f5;color:#7b1fa2}.tag-gray{background:#f5f5f5;color:#616161}.tag-yellow{background:#fffde7;color:#f57f17}
+
+/* Rank badges */
+.rank-A+{background:linear-gradient(135deg,#ffd54f,#ffb300);color:#000;font-weight:700;padding:3px 10px;border-radius:6px;font-size:12px}
+.rank-A{background:linear-gradient(135deg,#90caf9,#42a5f5);color:#fff;font-weight:700;padding:3px 10px;border-radius:6px;font-size:12px}
+.rank-A-{background:linear-gradient(135deg,#a5d6a7,#66bb6a);color:#fff;font-weight:700;padding:3px 10px;border-radius:6px;font-size:12px}
+
+/* Diff colors */
+.diff-neg{color:#e65100;font-weight:700}.diff-pos{color:#2e7d32;font-weight:700}
+
+/* Filter bar */
+.filter-bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;align-items:center}
+.filter-btn{padding:7px 16px;border:2px solid #c5cae9;border-radius:20px;background:#fff;color:var(--primary-light);cursor:pointer;font-size:13px;font-weight:600;transition:all .25s;user-select:none}
+.filter-btn:hover{background:#e8eaf6}
+.filter-btn.active{background:var(--primary-light);color:#fff;border-color:var(--primary-light)}
+.search-input{flex:1;min-width:220px;padding:9px 16px;border:2px solid #c5cae9;border-radius:20px;font-size:14px;outline:none;transition:border-color .3s}
+.search-input:focus{border-color:var(--primary-light);box-shadow:0 0 0 3px rgba(57,73,171,.12)}
+
+/* Formula box */
+.formula-box{background:linear-gradient(135deg,#ede7f6,#d1c4e9);border:1px solid #b39ddb;border-radius:12px;padding:16px 20px;margin:12px 0;font-family:"Consolas","Monaco","Courier New",monospace;font-size:14px;color:#4527a0;overflow-x:auto}
+.formula-title{font-weight:700;color:#512da8;font-size:15px;margin-bottom:8px}
+.formula-main{background:#fff;padding:12px 16px;border-radius:8px;margin:8px 0;font-size:14.5px;letter-spacing:.3px;border:1px dashed #9575cd}
+
+/* Exam question */
+.exam-q{background:linear-gradient(135deg,#fffde7,#fff9c4);border:1px solid #fbc02d;border-radius:10px;padding:14px 18px;margin:10px 0}
+.exam-q .q-school{font-weight:700;color:#f57f17;font-size:14px;margin-bottom:6px}
+.exam-q .q-text{color:#5d4037;font-size:13.5px;line-height:1.85}
+.exam-q .q-hint{font-size:12px;color:#9e9e9e;margin-top:6px}
+
+/* Policy card */
+.policy-card{background:linear-gradient(135deg,#fafafa,#eeeeee);border:1px solid #bdbdbd;border-radius:12px;padding:18px 22px;margin:12px 0}
+.policy-card h4{color:#37474f;margin-bottom:8px;font-size:15px}
+.policy-card p{color:#546e7a;font-size:13.5px}
+
+/* Subject requirement card */
+.subject-card{background:linear-gradient(135deg,#e8f5e9,#c8e6c9);border:1px solid #81c784;border-radius:12px;padding:16px 20px;margin:10px 0}
+.subject-card .sc-title{font-weight:700;color:#1b5e20;font-size:15px;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.subject-card .sc-detail{color:#2e7d32;font-size:13.5px}
+.subject-tag{display:inline-block;background:#1b5e20;color:#fff;padding:3px 12px;border-radius:6px;font-size:13px;font-weight:700;margin:2px 4px 2px 0}
+
+/* Footer */
+.footer{text-align:center;padding:28px 20px;color:#888;font-size:13px}
+.footer a{color:var(--primary-light);text-decoration:none}
+
+/* Back to top */
+.back-to-top{position:fixed;bottom:30px;right:30px;width:44px;height:44px;background:var(--primary);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 16px rgba(26,35,126,.35);font-size:20px;transition:all .3s;z-index:999;opacity:0;visibility:hidden}
+.back-to-top.show{opacity:1;visibility:visible}
+.back-to-top:hover{background:var(--primary-light);transform:translateY(-3px)}
+
+/* Responsive */
+@media(max-width:1100px){
+  .sidebar-nav{display:none} /* On smaller screens, hide sidebar - content is still accessible via scrolling */
+  .page-wrapper{display:block}
+  .main-content{max-width:100%}
+  /* Show mobile nav toggle hint */
+  .mobile-nav-hint{display:block !important}
+}
+@media(max-width:768px){
+  .header{padding:28px 18px}
+  .header h1{font-size:21px}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  table{font-size:11.5px}
+  th,td{padding:8px 5px}
+  .section{padding:20px 16px}
+  .section::before{left:14px;font-size:10px;padding:2px 10px}
+}
+.mobile-nav-hint{display:none;background:var(--primary);color:#fff;padding:10px 16px;font-size:13px;text-align:center;border-radius:10px;margin-bottom:16px}
+
+.print-only{display:none}
+@media print{
+  .sidebar-nav,.back-to-top,.filter-bar,.search-input,.no-print,.mobile-nav-hint{display:none!important}
+  body{background:#fff;font-size:11px}
+  .section,.card,.faq-section{break-inside:avoid;box-shadow:none;border:1 solid #ddd}
+  .section::before{position:static}
+}
+</style>
+</head>
+<body>
+
+<div class="page-wrapper">
+
+<!-- ==================== 左侧导航栏 ==================== -->
+<nav class="sidebar-nav no-print" id="sideNav">
+  <div class="nav-logo">
+    <div class="logo-icon">🎓</div>
+    <div class="logo-text">2026强基计划<br>广东省·物理类</div>
+  </div>
+  
+  <div class="nav-group">
+    <div class="nav-group-title">📘 新手入门</div>
+    <a class="nav-item active" onclick="scrollToSection('faq')"><span class="nav-num">01</span>强基计划问答科普</a>
+    <a class="nav-item" onclick="scrollToSection('requirements')"><span class="nav-num">02</span>报名要求与时间节点</a>
+    <a class="nav-item" onclick="scrollToSection('subject-req')"><span class="nav-num">03</span>⭐ 选科限制（重要！）</a>
+  </div>
+  
+  <div class="nav-group">
+    <div class="nav-group-title">🔢 入围机制</div>
+    <a class="nav-item" onclick="scrollToSection('formulas')"><span class="nav-num">04</span>加权公式详解</a>
+    <a class="nav-item" onclick="scrollToSection('exam-questions')"><span class="nav-num">05</span>校测真题精选</a>
+  </div>
+  
+  <div class="nav-group">
+    <div class="nav-group-title">🏫 高校详情</div>
+    <a class="nav-item" onclick="scrollToSection('university-table')"><span class="nav-num">06</span>34校招生信息总表</a>
+    <a class="nav-item" onclick="scrollToSection('score-analysis')"><span class="nav-num">07</span>分数线对比分析</a>
+    <a class="nav-item" onclick="scrollToSection('research')"><span class="nav-num">08</span>重点研究方向</a>
+  </div>
+  
+  <div class="nav-group">
+    <div class="nav-group-title">⚖️ 录取后政策</div>
+    <a class="nav-item" onclick="scrollToSection('post-policy')"><span class="nav-num">09</span>限定性政策详解</a>
+  </div>
+  
+  <div class="nav-group">
+    <div class="nav-group-title">📌 其他</div>
+    <a class="nav-item" onclick="scrollToSection('changes')"><span class="nav-num">10</span>2026年变化亮点</a>
+    <a class="nav-item" onclick="scrollToSection('not-in-gd')"><span class="nav-num">11</span>未在粤招生的学校</a>
+    <a class="nav-item" onclick="scrollToSection('disclaimer')"><span class="nav-num">12</span>数据来源与声明</a>
+  </div>
+</nav>
+
+<!-- ==================== 主内容区 ==================== -->
+<div class="main-content">
+
+<div class="mobile-nav-hint no-print">💡 使用电脑端浏览可查看左侧导航菜单，快速跳转到各板块 ↓</div>
+
+<!-- Header -->
+<div class="header no-print" data-section="">
+  <h1>🎓 2026年广东省强基计划高校信息汇总（物理类）</h1>
+  <div class="subtitle">34所高校 · 351人招生计划 · 完整分数线对比 · 校测真题 · 选科限制 · 录取政策</div>
+  <div class="header-tags">
+    <span class="htag">📊 含第五轮学科评估等级</span>
+    <span class="htag">🧮 加权公式完整版</span>
+    <span class="htag">📝 往年校测真题</span>
+    <span class="htag">⚠️ 选科限制说明</span>
+    <span class="htag">✨ 问答式科普</span>
+  </div>
+</div>
+
+<!-- 核心数据卡片 -->
+<div class="cards no-print">
+  <div class="card"><div class="card-num">34</div><div class="card-label">在粤招生高校</div><div class="card-sub">全国39所中<br>5所未在粤招生</div></div>
+  <div class="card"><div class="card-num" style="color:#2e7d32">351</div><div class="card-label">物理类招生计划</div><div class="card-sub">较2025年+42人<br>涨幅约13.6%</div></div>
+  <div class="card"><div class="card-num" style="color:#e65100">11</div><div class="card-label">复交南模式高校</div><div class="card-sub">高考前校测<br>+报名即入围</div></div>
+  <div class="card"><div class="card-num" style="color:#7b1fa2">10</div><div class="card-label">加权入围高校</div><div class="card-sub">部分科目<br>有权重加成</div></div>
+  <div class="card"><div class="card-num" style="color:#1565c0">13</div><div class="card-label">裸分入围高校</div><div class="card-sub">直接按<br>高考总分排序</div></div>
+</div>
+
+<!-- ==================== FAQ 问答式简介 ==================== -->
+<div class="faq-section" id="faq">
+  <h2>📖 强基计划新手问答 — 从零了解</h2>
+
+  <!-- Q1 -->
+  <div class="faq-item open">
+    <div class="faq-q">Q1：什么是强基计划？为什么要设立？</div>
+    <div class="faq-a">
+      <p><strong>定义：</strong>强基计划全称<strong>"基础学科招生改革试点"</strong>，是教育部于2020年起在部分顶尖高校开展的招生改革试点。它取代了原来的"自主招生"，定位更加聚焦。</p>
+      <div class="tip-box tip-blue"><strong>⭐ 核心目标：</strong>服务国家重大战略需求，聚焦基础学科（数学、物理、化学、生物、历史、哲学、古文字学等），选拔培养有志于服务国家重大战略需求且综合素质优秀或基础学科拔尖的学生。</div>
+      <p><strong>关键特点：</strong></p>
+      <ul>
+        <li><strong>小而精：</strong>全国仅39所顶尖高校参与（全部为原985高校）</li>
+        <li><strong>低分进名校机会：</strong>多数学校入围分数低于正常批次投档线，降分空间可达5~30分不等</li>
+        <li><strong>本硕博衔接：</strong>被录取后享受单独编班、导师制、本硕博衔接培养通道</li>
+        <li><strong>限制转专业：</strong>原则上不得转入非强基专业，但可在强基专业内调整方向</li>
+        <li><strong>动态进出机制：</strong>考核不合格者可能被淘汰出局，转入普通班或退学</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Q2 -->
+  <div class="faq-item open">
+    <div class="faq-q">Q2：哪些学校可以报？广东考生能报多少所？</div>
+    <div class="faq-a">
+      <p><strong>全国共39所高校开展强基计划</strong>（全部为985工程大学）。其中在广东省招生的有<strong>33~34所</strong>（视当年具体安排），通常有5所左右不在广东投放名额：</p>
+      <ul>
+        <li><strong>通常不在广东招生的：</strong>中国海洋大学、中央民族大学、中国农业大学、西北农林科技大学等</li>
+        <li><strong>国防科技大学：</strong>军事院校，招生渠道独立于普通强基计划</li>
+        <li><strong>2026年新增：</strong>华东师范大学、西北工业大学首次在粤招生</li>
+      </ul>
+      <div class="tip-box tip-orange">💡 广东考生在整个强基计划中<strong>只能选择1所高校</strong>填报，但可以在该校内填报多个专业志愿（数量视各校规定）。请务必慎重选择！</div>
+    </div>
+  </div>
+
+  <!-- Q3 -->
+  <div class="faq-item">
+    <div class="faq-q">Q3：报名流程是怎样的？关键时间节点？</div>
+    <div class="faq-a">
+      <p><strong>完整时间轴（以2026年为例，每年略有微调）：</strong></p>
+      <ol>
+        <li><strong>3月底—4月初：</strong>各高校发布年度招生简章 → 考生登录<strong>阳光高考平台</strong>（gaokao.chsi.com.cn）进行网上报名</li>
+        <li><strong>4月—5月（针对"复交南"模式11校）：</strong>高考前参加<strong>初试校测</strong>（笔试为主），通过初试后获得复试资格</li>
+        <li><strong>6月7—9日：</strong>参加全国统一高考</li>
+        <li><strong>6月下旬：</strong>公布高考成绩 → 各校确定<strong>入围名单</strong>（按高考成绩或加权成绩从高到低确定）</li>
+        <li><strong>6月底—7月初：</strong>各校组织<strong>复试校测</strong>（面试+笔试+体测）→ 综合成绩计算 → 公布拟录取名单</li>
+        <li><strong>7月上旬：</strong>各省考试院办理录取手续 → 正式录取</li>
+      </ol>
+      <div class="tip-box tip-red">⚠️ 强基计划录取在<strong>所有批次之前</strong>进行！一旦被强基录取，将不再参与后续任何批次录取（提前批、本科批、综评等全部作废）。这是最大的风险点！</div>
+    </div>
+  </div>
+
+  <!-- Q4 -->
+  <div class="faq-item">
+    <div class="faq-q">Q4：可以同时报多个学校/多个专业吗？</div>
+    <div class="faq-a">
+      <p><strong>学校层面：只能报1所！</strong>每位考生在强基计划体系中<strong>只能选择1所高校</strong>，必须在所有学校中做出唯一选择。</p>
+      <p><strong>专业层面：视各校规定而定</strong></p>
+      <ul>
+        <li>大部分学校允许填报<strong>1~5个专业志愿</strong>（如清华最多填5个、北大最多填2个）</li>
+        <li>少数学校要求<strong>限报1个专业</strong></li>
+        <li>部分学校采用"专业组"模式（如同济分为Ⅰ组/Ⅱ组）</li>
+      </ul>
+      <div class="tip-box tip-green">✅ 策略建议：优先选"冲一冲能入围"的学校 + 填满该校所有你能接受的专业志愿。<strong>不要把强基当保底用</strong>——它的本质是"低分进名校"的机会，不是兜底方案。</div>
+    </div>
+  </div>
+
+  <!-- Q5 -->
+  <div class="faq-item">
+    <div class="faq-q">Q5：两种入围模式分别是什么？有什么区别？</div>
+    <div class="faq-a">
+      <p>强基计划录取的核心公式：<strong>综合成绩 = 高考成绩（折算后）× 85% + 校测成绩 × 15%</strong></p>
+      
+      <h4 style="color:var(--primary);font-size:15px">📌 模式一：高考出分后按成绩入围（主流模式，约23所）</h4>
+      <ol>
+        <li>考生先报名 → 参加高考</li>
+        <li>高考出分后，学校按<strong>高考裸分（或加权分）</strong>从高到低划定入围名单（通常按计划的3~6倍）</li>
+        <li>入围者参加校测 → 最终按综合成绩录取</li>
+      </ol>
+
+      <h4 style="color:var(--primary);font-size:15px">📌 模式二："高考前校测 + 报名即入围"（复交南模式，11所）</h4>
+      <ol>
+        <li><strong>4月份报名时即获得初试资格</strong>（不需要等待高考成绩！）</li>
+        <li><strong>5月—6月初参加初试校测</strong>（笔试为主）</li>
+        <li>初试合格→参加6月高考→高考后复试（面试为主）→ 综合成绩录取</li>
+      </ol>
+      
+      <div class="tip-box tip-blue">
+        📋 采用"复交南"模式的11所高校：<br>
+        <strong>复旦大学、上海交通大学、南京大学、浙江大学、中国科学技术大学、同济大学、厦门大学、西安交通大学、武汉大学、哈尔滨工业大学、兰州大学</strong>
+      </div>
+      <div class="tip-box tip-orange">💡 本质区别：<br>
+        • 模式一：高考定生死，校测决定最终排名 → <strong>适合发挥稳定的考生</strong><br>
+        • 模式二：初试就能筛选，给竞赛生更多展示机会 → <strong>适合学科特长明显的考生</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q6 -->
+  <div class="faq-item">
+    <div class="faq-q">Q6：什么是"加权入围"？如何换算原始分？</div>
+    <div class="faq-a">
+      <p>部分高校在划入围名单时<strong>不使用高考总分</strong>，而是对某些科目赋予更高权重后再排序。比如南开大学的数学和物理权重是其他科目的1.5倍——明显偏向理科强的学生。</p>
+      
+      <p><strong>为什么要加权？</strong>筛选真正有学科潜力的学生；避免靠总分均衡挤掉单科突出的学生；对数学/物理强者更有利。</p>
+      
+      <p><strong>⚠️ 加权换算原始分的问题：</strong>由于只涉及部分科目加权，简单用"加权线÷满分×750"推算偏差较大。</p>
+      <div class="formula-box">
+        <div class="formula-title">🔍 三种推算方法（推荐程度递增）</div>
+        <p><strong>A. 保守估计法：</strong></p>
+        <div style="background:#fff;padding:10px;border-radius:6px;margin:6px 0;font-family:inherit;font-size:13.5px">估算值 = 加权入围线 ÷ 加权满分 × 750 − 修正值(5~15分)</div>
+        <p style="font-size:13px">修正原因：加权放大优势科目贡献，实际原始分低于简单换算值</p>
+        <p><strong>B. 经验参考法：</strong>参考往年实际入围考生平均高考分 / 咨询在读学长学姐</p>
+        <p><strong>C. 位次反推法（最准确 ✅）：</strong>查官方公布的入围最低位次 → 用一分一段表反推原始分</p>
+      </div>
+      <div class="tip-box tip-red">⚠️ 本文档中的"估算原始分"采用方法A并加入合理修正，仅供参考。实际分数以各校当年公布为准。</div>
+    </div>
+  </div>
+
+  <!-- Q7 -->
+  <div class="faq-item">
+    <div class="faq-q">Q7：强基 vs 正常批次，怎么选？</div>
+    <div class="faq-a">
+      <table style="width:100%;font-size:13px;border:1px solid #e0e0e0;border-radius:8px;overflow:hidden">
+        <thead><tr><th style="width:20%">维度</th><th style="width:40%">强基计划</th><th style="width:40%">正常批次</th></tr></thead>
+        <tbody>
+          <tr><td><strong>录取顺序</strong></td><td>最先（提前于一切批次）</td><td>按本科批次正常录</td></tr>
+          <tr><td><strong>分数门槛</strong></td><td>普遍低5~30分</td><td>按投档线</td></tr>
+          <tr><td><strong>专业范围</strong></td><td>仅限基础学科</td><td>全校专业可选</td></tr>
+          <tr><td><strong>转专业</strong></td><td>原则上不能转出</td><td>相对灵活</td></tr>
+          <tr><td><strong>培养方式</strong></td><td>单独编班·导师制·本硕博衔接</td><td>普通班级制</td></tr>
+          <tr><td><strong>最大风险</strong></td><td>录取后不能再参与其他录取</td><td>几分之差错失名校</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Q8 -->
+  <div class="faq-item">
+    <div class="faq-q">Q8：什么类型的学生适合报？</div>
+    <div class="faq-a">
+      <p><strong>✅ 非常适合：</strong></p>
+      <ul>
+        <li>对数理化生等基础学科真正有兴趣</li>
+        <li>高考分在目标校正常投档线下5~25分区间</li>
+        <li>有学科竞赛省级及以上奖项</li>
+        <li>目标就是985名校，不介意专业限制</li>
+        <li>计划走学术路线（读研读博）</li>
+      </ul>
+      <p><strong>⚠️ 可以考虑：</strong>分数刚好够边缘的考生 / 有一定竞赛基础但没省一 / 想进名校但对专业无特别偏好</p>
+      <p><strong>❌ 不太适合：</strong>一心想读计算机/金融/医学/法学等热门专业 | 分数远超目标校投档线 | 不愿被限转专业 | 不打算读研读博</p>
+      <div class="tip-box tip-green">💡 核心判断：如果你能在"低分进更好的学校"和"专业受限但资源更好"之间接受前者 → 强基值得认真考虑。</div>
+    </div>
+  </div>
+
+  <!-- Q9 -->
+  <div class="faq-item">
+    <div class="faq-q">Q9：被录取后有什么限制和政策？</div>
+    <div class="faq-a">
+      <p><strong>转专业：</strong>原则上不得转入非强基专业（教育部刚性规定），可在强基内部调整方向。详见下文【限定性政策】板块。</p>
+      <p><strong>动态进出：</strong>每学期/学年考核，不合格可能被淘汰出局转入普通班。淘汰率一般在5%~15%/年。</p>
+      <p><strong>本硕博衔接：</strong>享有更高的保研率通道（通常强基班保研率远高于普通班），但需达到GPA和科研要求，<strong>≠ 自动保研</strong>。</p>
+      <div class="tip-box tip-red">⚠️ 一旦确认录取不能再参加其他批次录取！其他志愿全部作废！报名前务必想清楚！</div>
+    </div>
+  </div>
+
+  <!-- Q10 -->
+  <div class="faq-item">
+    <div class="faq-q">Q10：校测考什么？难度如何？</div>
+    <div class="faq-a">
+      <p><strong>三个环节：</strong>①笔试（部分学校，高于高考接近竞赛）②面试（几乎所有学校）③体测（必考且须合格，不计分）</p>
+      <p><strong>各校侧重：</strong>清北（数+理/化，竞赛预赛级）| 复交南初试（核心筛选，数+理科综）| 中科大（数+物，硬核）| 其他多数以面试为主</p>
+      <p><strong>面试常见题型：</strong>自我介绍+为什么选这个专业/校 | 学科问题（量子纠缠/AI看法等）| 时事分析 | 英文问答 | 无领导小组讨论（少数）</p>
+      <p>👇 具体真题示例见下方【校测真题精选】板块 👇</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== 报名要求与政策 ==================== -->
+<div class="section" id="requirements" data-section="报名要求 & 时间节点">
+  <h2><span class="sec-icon">📋</span> 报名基本要求 & 关键时间节点</h2>
+
+  <h3>一、基本报名条件（通用）</h3>
+  <div class="policy-card">
+    <h4>✅ 必须同时满足以下条件：</h4>
+    <ol>
+      <li><strong>参加当年全国统一高考</strong>（应届/往届均可，部分学校仅招应届）</li>
+      <li><strong>综合素质评价合格</strong>或良好以上</li>
+      <li><strong>身体条件符合专业要求</strong>（色盲色弱需避开化学、生物等专业）</li>
+      <li>在阳光高考平台完成网上报名并提交材料</li>
+    </ol>
+  </div>
+
+  <h3>二、各校特殊要求一览</h3>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>类别</th><th>涉及学校</th><th>具体要求</th></tr></thead>
+    <tbody>
+      <tr><td><span class="tag tag-red">仅限应届</span></td>
+        <td>清华、北大、复旦、上交、南大、浙大、中科大、同济、北航、北理工、东南、武大、华工、中大</td>
+        <td>仅接受应届高中毕业生报考</td></tr>
+      <tr><td><span class="tag tag-orange">竞赛加分</span></td>
+        <td>清北、复旦、上交、中科大、南大、浙大</td>
+        <td>虽未硬性要求，但有<strong>五大学科竞赛省级二等奖+</strong>者在校测环节有明显优势；清北部分专业甚至需要省一竞争力</td></tr>
+      <tr><td><span class="tag tag-blue">体测合格</span></td>
+        <td><strong>全部34所</strong></td>
+        <td>体测必考，<strong>不计入总分但必须合格</strong>。项目：身高体重/BMI/肺活量/坐位体前屈/立定跳远/50米跑（各校选3项左右）</td></tr>
+      <tr><td><span class="tag tag-green">无硬性门槛</span></td>
+        <td>南开、天大、山大、中南、湖大、重大、川大、吉大、大工、东北大学、兰大、西工大、华东师大、成电、西交、厦大、北师大</td>
+        <td>高考成绩达标即可报名入围，无需竞赛或其他附加条件</td></tr>
+      <tr><td><span class="tag tag-purple">学考要求</span></td>
+        <td>中大、华南理工、同济等部分高校</td>
+        <td>学考各科均合格（C级及以上）；部分省份有具体等级要求</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>三、2026年时间轴（预计）</h3>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>时间</th><th>事项</th><th>备注</th></tr></thead>
+    <tbody>
+      <tr><td><strong>3月底—4月上旬</strong></td><td>各高校发布招生简章</td><td>阳光高考平台 + 各校官网</td></tr>
+      <tr><td><strong>4月中旬—30日</strong></td><td>☀️ <strong>正式报名窗口（最重要！）</strong></td><td>阳光高考平台 · 只能报1所！</td></tr>
+      <tr><td><strong>5月—6月初</strong></td><td>"复交南"模式11校举行<strong>初试</strong></td><td>笔试形式，各省会城市</td></tr>
+      <tr><td><strong>6月7—9日</strong></td><td>全国高考</td><td>正常参加</td></tr>
+      <tr><td><strong>6月25日前后</strong></td><td>公布高考成绩及一分一段表</td><td>广东一般在此日期</td></tr>
+      <tr><td><strong>6月26—28日</strong></td><td>各校公布<strong>入围名单</strong></td><td>按高考分/加权分排序</td></tr>
+      <tr><td><strong>6月30日—7月3日</strong></td><td>各校组织<strong>复试校测</strong></td><td>面试+笔试+体测</td></tr>
+      <tr><td><strong>7月5日前后</strong></td><td>拟录取 → 正式录取</td><td>早于一切其他批次</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="tip-box tip-red">⚠️ 以上时间为预估，以教育部和各校2026年正式简章为准！每年可能微调。</div>
+</div>
+
+
+<!-- ==================== 选科限制（新增重点板块） ==================== -->
+<div class="section" id="subject-req" data-section="选科限制（重要！）">
+  <h2><span class="sec-icon">⭐</span> 广东省新高考选科要求（3+1+2模式）</h2>
+  
+  <div class="tip-box tip-purple" style="font-size:14.5px">
+    <strong>📌 为什么选科限制如此重要？</strong><br>
+    广东省实行"3+1+2"新高考模式（语文+数学+外语 + 物理/历史二选一 + 化学/生物/地理/政治四选二）。<strong>强基计划几乎全部为理科类专业，绝大多数要求首选科目必须为"物理"！</strong>如果你的首选科目是"历史"，那么可报考的强基专业将非常有限。
+  </div>
+
+  <h3>一、广东新高考选科规则速览</h3>
+  <div class="policy-card" style="background:linear-gradient(135deg,#e8eaf6,#c5cae9)">
+    <h4>📐 "3+1+2" 模式结构</h4>
+    <table style="font-size:13.5px">
+      <thead><tr><th>类别</th><th>科目</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td><strong>统考科目（3）</strong></td><td>语文、数学、外语</td><td>全国统一命题，每门150分</td></tr>
+        <tr><td><strong>首选科目（1）</strong></td><td>物理 或 历史<span style="color:red;font-weight:bold"> ← 关键！</span></td><td>二选一，原始分计入总分</td></tr>
+        <tr><td><strong>再选科目（2）</strong></td><td>化学、生物、地理、政治 中任选2门</td><td>等级赋分后计入总分（每门100分）</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>二、强基计划各专业选科要求汇总</h3>
+  
+  <div class="subject-card">
+    <div class="sc-title">🔬 第一类：首选必须为【物理】的专业（占绝大多数）</div>
+    <div class="sc-detail">
+      <p>以下专业<strong>几乎所有在粤招生的高校均要求首选科目必须为"物理"</strong>：</p>
+      <div style="margin-top:10px">
+        <span class="subject-tag">数学类 / 数学与应用数学</span>
+        <span class="subject-tag">物理学类 / 物理学</span>
+        <span class="subject-tag">化学类 / 化学</span>
+        <span class="subject-tag">生物科学类 / 生物科学</span>
+        <span class="subject-tag">理论与应用力学</span>
+        <span class="subject-tag">信息与计算科学</span>
+        <span class="subject-tag">工程力学</span>
+        <span class="subject-tag">核工程与核技术</span>
+        <span class="subject-tag">生物技术</span>
+        <span class="subject-tag">生物医学科学</span>
+        <span class="subject-tag">应用物理学</span>
+        <span class="subject-tag">飞行器动力工程</span>
+        <span class="subject-tag">飞行器制造工程</span>
+        <span class="subject-tag">航空航天</span>
+        <span class="subject-tag">船舶与海洋工程</span>
+        <span class="subject-tag">生态学</span>
+        <span class="subject-tag">基础医学</span>
+      </div>
+      <div class="tip-box tip-green" style="margin-top:10px;font-size:13px">
+        ✅ <strong>再选科目要求：</strong>对于上述大部分专业，再选科目<strong>通常不作硬性要求</strong>（即化/生/地/政任意两门均可）。但部分学校的部分专业可能有偏好：
+        <ul style="margin-top:6px;padding-left:18px">
+          <li><strong>化学类专业</strong>：部分高校建议再选含"化学"</li>
+          <li><strong>生物/医学类专业</strong>：部分高校建议再选含"生物"或"化学"</li>
+          <li><strong>核工程专业</strong>：部分高校建议再选含"化学"</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="subject-card">
+    <div class="sc-title">📜 第二类：首选【物理或历史】均可的专业（极少数）</div>
+    <div class="sc-detail">
+      <p>以下文理兼招的专业在部分学校允许首选"物理"或"历史"均可：</p>
+      <div style="margin-top:10px">
+        <span class="subject-tag" style="background:#6a1b9a;color:#fff">哲学</span>
+        <span class="subject-tag" style="background:#6a1b9a;color:#fff">历史学</span>
+        <span class="subject-tag" style="background:#6a1b9a;color:#fff">考古学</span>
+        <span class="subject-tag" style="background:#6a1b9a;color:#fff">古文字学</span>
+        <span class="subject-tag" style="background:#6a1b9a;color:#fff">汉语言文学(古文字方向)</span>
+      </div>
+      <div class="tip-box tip-blue" style="margin-top:10px;font-size:13px">
+        💡 这些专业仅在<strong>北京大学、中国人民大学、南京大学、北京师范大学、中山大学</strong>等少数学校开设强基计划招生，且在广东的招生计划非常有限（通常归入历史类组别）。<strong>本文档聚焦物理类考生，故此类专业信息仅供参考。</strong>
+      </div>
+    </div>
+  </div>
+
+  <h3>三、各校选科要求详细对照表</h3>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>高校</th><th>首选科目要求</th><th>再选科目要求</th><th>特殊说明</th></tr></thead>
+    <tbody>
+      <tr><td><strong>清华大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td>所有强基专业均要求物理首选</td></tr>
+      <tr><td><strong>北京大学</strong></td><td><span class="subject-tag">物理</span> 或 <span class="subject-tag" style="background:#6a1b9a;color:#fff">历史</span></td><td>不限（文理分开组）</td><td>数理化生等需物理；哲史考古等可选历史</td></tr>
+      <tr><td><strong>上海交通大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>复旦大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td>古文字方向可能例外</td></tr>
+      <tr><td><strong>浙江大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>南京大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td>古文字方向可能例外</td></tr>
+      <tr><td><strong>中国科学技术大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td>纯理工科强校</td></tr>
+      <tr><td><strong>哈尔滨工业大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>西安交通大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>西北工业大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td>2026新增在粤招生</td></tr>
+      <tr><td><strong>同济大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>东南大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>北京航空航天大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>北京理工大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>南开大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>天津大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>山东大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>武汉大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>华中科技大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>中南大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>湖南大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>中山大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>华南理工大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>四川大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>电子科技大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>重庆大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>大连理工大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>东北大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>吉林大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>兰州大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>厦门大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td></td></tr>
+      <tr><td><strong>北京师范大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td>（数理化生方向）</td></tr>
+      <tr><td><strong>华东师范大学</strong></td><td><span class="subject-tag">仅物理</span></td><td>不限</td><td>2026新增在粤招生</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="tip-box tip-orange" style="font-size:14px">
+    <strong>⚠️ 重要提醒：</strong><br>
+    ① 以上选科要求基于各校历年简章和广东省教育考试院公布的《选科要求指引》整理，<strong>最终以各高校2026年正式发布的招生简章为准</strong>！<br>
+    ② 如果你的首选科目是"历史"，那么你在强基计划中的选择面会极其狭窄（仅北大/人大/南大/北师大的少量文科专业），强烈建议首选"物理"。 <br>
+    ③ "不限"表示再选科目（化学/生物/地理/政治）任意选择2门即可满足要求。但如果你的目标专业是化学/生物/医学相关，建议再选中包含对应学科的组合，这对未来学习更有利。
+  </div>
+</div>
+
+
+<!-- ==================== 各校加权公式 ==================== -->
+<div class="section" id="formulas" data-section="加权公式详解">
+  <h2><span class="sec-icon">🧮</span> 各高校加权入围公式详解</h2>
+  <p style="margin-bottom:16px;color:#666">以下高校采用加权成绩划定入围名单。加权意味着<strong>部分科目权重更高</strong>，对相应科目强的考生更有利。</p>
+
+  <div class="formula-box">
+    <div class="formula-title">清华大学 — 不加权</div>
+    <div class="formula-main">入围依据：高考裸分直接排序（不加权）</div>
+    <p style="margin-top:8px;font-size:13px">说明：清华对<strong>破格入围</strong>（五大学科竞赛国决金银牌）有单独通道。普通考生按总分排序。</p>
+  </div>
+
+  <div class="formula-box">
+    <div class="formula-title">南开大学 — 数理双核重度加权 ⭐ 最激进之一</div>
+    <div class="formula-main">加权分 = 数学×150% + 物理/化学/生物(最高一门)×150% + 其他×100%</div>
+    <p style="margin-top:8px;font-size:13px"><strong>特点：</strong>数理权重极高，非常适合数学/物理单科突出者。<strong>加权满分约825分</strong>。<strong>修正值：-8~-12分</strong></p>
+  </div>
+
+  <div class="formula-box">
+    <div class="formula-title">北京理工大学 — 数学优先型</div>
+    <div class="formula-main">加权分 = 数学×130% + 物理×120% + 其他×100%</div>
+    <p style="margin-top:8px;font-size:13px">数学权重大于物理。<strong>加权满分约805分</strong>。<strong>修正值：-8~-12分</strong></p>
+  </div>
+
+  <div class="formula-box">
+    <div class="formula-title">哈尔滨工业大学 — 数物均衡型</div>
+    <div class="formula-main">加权分 = 数学×120% + 物理×120% + 其他×100%</div>
+    <p style="margin-top:8px;font-size:13px">典型工科加权。<strong>加权满分约790分</strong>。<strong>修正值：-5~-8分</strong></p>
+  </div>
+
+  <div class="formula-box">
+    <div class="formula-title">华南理工大学 — 数物均衡型</div>
+    <div class="formula-main">加权分 = 数学×120% + 物理×120% + 其他×100%</div>
+    <p style="margin-top:8px;font-size:13px">与哈工大同款公式。广东本地考生友好度尚可。<strong>加权满分约790分</strong>。<strong>修正值：-5~-8分</strong></p>
+  </div>
+
+  <div class="formula-box">
+    <div class="formula-title">电子科技大学 — 数物均衡型</div>
+    <div class="formula-main">加权分 = 数学×120% + 物理×120% + 其他×100%</div>
+    <p style="margin-top:8px;font-size:13px"><strong>加权满分约790分</strong>。<strong>修正值：-5~-8分</strong></p>
+  </div>
+
+  <div class="formula-box">
+    <div class="formula-title">大连理工大学 — 温和加权型</div>
+    <div class="formula-main">加权分 = 数学×120% + 物理×110% + 其他×100%</div>
+    <p style="margin-top:8px;font-size:13px">相对温和。<strong>加权满分约785分</strong>。<strong>修正值：-4~-7分</strong></p>
+  </div>
+
+  <div class="formula-box">
+    <div class="formula-title">重庆大学 — 全面加权型</div>
+    <div class="formula-main">加权分 = 数学×120% + 物理×120% + 外语×105% + 其他×100%</div>
+    <p style="margin-top:8px;font-size:13px">数理+外语均有加成。<strong>加权满分约797.5分</strong>。<strong>修正值：-6~-10分</strong></p>
+  </div>
+
+  <div class="formula-box">
+    <div class="formula-title">吉林大学 — 专业相关型</div>
+    <div class="formula-main">加权分 = 主科(数/物/化/生,选其一)×130% + 相关科目×110% + 其他×100%</div>
+    <p style="margin-top:8px;font-size:13px">根据申报专业决定主科。<strong>修正值：-5~-10分</strong></p>
+  </div>
+
+  <div class="formula-box">
+    <div class="formula-title">湖南大学 / 中南大学 — 轻度加权型 ⭐ 最温和</div>
+    <div class="formula-main">加权分 = 数学×115% + 物理×115% + 其他×100%</div>
+    <p style="margin-top:8px;font-size:13px">两湖高校加权最温和。<strong>加权满分约782.5分</strong>。<strong>修正值：-3~-6分</strong></p>
+  </div>
+
+  <div class="tip-box tip-blue" style="margin-top:18px">
+    <strong>📊 策略总结：</strong>如果数学/物理单科排名 >> 总排名 → 加权校是你的<strong>战略性机遇</strong>。如果语文/英语是非加权科目中的优势 → 优先考虑裸分入围的学校。<br>
+    <em>注：以上公式基于各校近年招生简章整理，2026年请以最新简章为准。</em>
+  </div>
+</div>
+
+
+<!-- ==================== 校测真题精选 ==================== -->
+<div class="section" id="exam-questions" data-section="校测真题精选">
+  <h2><span class="sec-icon">📝</span> 强基计划校测真题精选（往年回顾）</h2>
+  <p style="margin-bottom:16px;color:#666">整理自往届回忆版真题，仅供参考了解难度风格。每年题目更新。</p>
+
+  <h3>一、笔试真题</h3>
+
+  <div class="exam-q">
+    <div class="q-school">🏫 清华大学 · 数学（2024年回忆）</div>
+    <div class="q-text">
+      1. 设 f(x) 在 [0,1] 连续且 ∫₀¹ f(x)dx=0, ∫₀¹ xf(x)dx=0，证明∃ξ∈(0,1) 使 f(ξ)=f'(ξ)<br>
+      2. 求 f:ℝ→ℝ 使 f(x+y)+f(x-y)=2f(x)cos y 对任意实数 x,y 成立<br>
+      3. （组合数学）n人圆桌每人至少与一邻座握手，求不同握手方案数
+    </div>
+    <div class="q-hint">难度：★★★★★（高于高考，接近竞赛预赛水平）</div>
+  </div>
+
+  <div class="exam-q">
+    <div class="q-school">🏫 北京大学 · 数学+物理（2024年回忆）</div>
+    <div class="q-text">
+      【数学】1. 证明素数无穷多（欧几里得变体） 2. 求极限 limₙ→∞(1/n)Σ(1/(1+...+1/k))  3. 实对称矩阵正定性证明<br>
+      【物理】1. 均匀带电球壳电场分布（高斯定理）  2. 相对论时间膨胀(0.8c飞船)  3. 波粒二象性实验证据 + 薛定谔方程意义
+    </div>
+    <div class="q-hint">难度：★★★★★（数学联赛一试级别，物理涉及大物内容）</div>
+  </div>
+
+  <div class="exam-q">
+    <div class="q-school">🏫 复旦大学 · 初试（复交南模式）（2024年回忆）</div>
+    <div class="q-text">
+      1. 若a+b+c=1(a,b,c>0)，求证 1/a+4/b+9/c ≥ 36<br>
+      2. a₁=1, aₙ₊₁=aₙ+1/aₙ，求 lim(aₙ²/n)<br>
+      3. （物理）质量m物体从高度h落到弹簧(k)，求最大压缩量<br>
+      4. （化学）Fe³⁺+SCN⁻离子方程式 + 配位场理论解释颜色<br>
+      5. （逻辑推理）甲乙丙真假话判断题
+    </div>
+    <div class="q-hint">难度：★★★★☆（介于高考难题和竞赛之间）</div>
+  </div>
+
+  <div class="exam-q">
+    <div class="q-school">🏫 上海交通大学 · 初试（2024年回忆）</div>
+    <div class="q-text">
+      1. 求 ∫(x²+1)/(x⁴+1) dx<br>
+      2. X,Y~U[0,1]独立，求 P(XY≤1/4)<br>
+      3. （物理）理想气体等温膨胀后绝热压缩回原体积，画p-V图算净功<br>
+      4. （英文阅读）关于AI伦理的短文理解题
+    </div>
+    <div class="q-hint">难度：★★★★☆（覆盖广，含英文阅读）</div>
+  </div>
+
+  <div class="exam-q">
+    <div class="q-school">🏫 中国科学技术大学 · 笔试（2024年回忆）</div>
+    <div class="q-text">
+      【数学】1. 凸n边形内角和推广到凸多面体(欧拉公式)  2. 解 y''+y'-6y=eˣcos2x  3. 行列式|C(i+j,i)| i,j=0..n<br>
+      【物理】1. 推导麦克斯韦速率分布函数+最概然速率  2. 带电粒子在均匀磁场运动轨迹  3. 热力学第二定律开尔文/克劳修斯表述
+    </div>
+    <div class="q-hint">难度：★★★★★（大量大学内容，"数理硬核"著称）</div>
+  </div>
+
+  <div class="exam-q">
+    <div class="q-school">🏫 南京大学 · 初试（2024年回忆）</div>
+    <div class="q-text">
+      1. 已知 f(x+f(y))=f(x)+y，求连续函数 f 的表达式<br>
+      2. 单位圆内随机取三点构成锐角三角形的概率<br>
+      3. （化学）比较 HClO₄/HClO₃/HClO₂/HClO 酸性强弱并解释<br>
+      4. （生物）DNA半保留复制证据(Meselson-Stahl实验原理)
+    </div>
+    <div class="q-hint">难度：★★★★☆（跨学科综合考查）</div>
+  </div>
+
+  <div class="exam-q">
+    <div class="q-school">🏫 浙江大学 · 初试（2024年回忆）</div>
+    <div class="q-text">
+      1. 求 lim(x→0)(tan x - sin x)/x³<br>
+      2. A²=E，求A的特征值可能取值<br>
+      3. 光双缝干涉中一缝前放薄片(d,n)，条纹移动量<br>
+      4. （编程思维）O(n log n)找数组中出现>n/2次的元素
+    </div>
+    <div class="q-hint">难度：★★★★☆（注重算法思维渗透）</div>
+  </div>
+
+  <h3>二、面试真题</h3>
+
+  <div class="exam-q">
+    <div class="q-school">🏫 清华大学 · 面试（通用类）</div>
+    <div class="q-text">
+      1. 用通俗语言向初中生解释"量子纠缠"<br>
+      2. AI会取代人类科学家吗？（开放思辨）<br>
+      3. 设计一个验证广义相对论引力波的实验<br>
+      4. 你最喜欢的数学家及其启发<br>
+      5. （英文）介绍你做过的最有趣的研究/实验
+    </div>
+    <div class="q-hint">考察：科学素养、表达力、创新思维、英文能力</div>
+  </div>
+
+  <div class="exam-q">
+    <div class="q-school">🏫 北京大学 · 面试</div>
+    <div class="q-text">
+      1. 怎么看"基础学科冷板凳"？你为什么愿意坐？<br>
+      2. 用一个数学概念形容人生，选什么？<br>
+      3. 分析当前国际形势下基础科学研究的重要性<br>
+      4. 哥德巴赫猜想最新进展？陈氏定理内容？
+    </div>
+    <div class="q-hint">考察：学科志趣、价值取向、社会认知、专业深度</div>
+  </div>
+
+  <div class="exam-q">
+    <div class="q-school">🏫 中山大学 · 面试（2024年回忆）</div>
+    <div class="q-text">
+      1. 为什么选中山大学的强基计划？最感兴趣的研究方向？<br>
+      2. 粤港澳大湾区在国家科技发展中的角色？<br>
+      3. 谈谈对"卡脖子技术"的理解，基础学科如何助力解决<br>
+      4. 学习中遇到极难概念时如何克服？
+    </div>
+    <div class="q-hint">考察：学校认同感、家国情怀、学习品质</div>
+  </div>
+
+  <div class="exam-q">
+    <div class="q-school">🏫 华南理工大学 · 面试（2024年回忆）</div>
+    <div class="q-text">
+      1. 介绍一项你最成功的实验/项目<br>
+      2. 新能源材料vs传统化石能源的未来趋势<br>
+      3. 工程师和科学家的区别？你想做哪种？<br>
+      4. （英文）What is your plan for college life if admitted?
+    </div>
+    <div class="q-hint">考察：实践能力、职业规划、英文表达能力</div>
+  </div>
+
+  <h3>三、体测内容及标准（参考）</h3>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>测试项目</th><th>合格标准（参考值）</th><th>备注</th></tr></thead>
+    <tbody>
+      <tr><td>BMI</td><td>17.5 ≤ BMI ≤ 30</td><td>过高/过低均可能不合格</td></tr>
+      <tr><td>肺活量</td><td>男≥3100ml / 女≥2200ml</td><td>各校标准不完全一致</td></tr>
+      <tr><td>坐位体前屈</td><td>男≥3.0cm / 女≥5.0cm</td><td>柔韧性</td></tr>
+      <tr><td>立定跳远</td><td>男≥205cm / 女≥150cm</td><td>下肢爆发力</td></tr>
+      <tr><td>50米跑</td><td>男≤9.2s / 女≤10.4s</td><td>速度素质</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="tip-box tip-blue">💡 体测<strong>不计入总分但必须全部合格</strong>！建议考前适当锻炼。残疾/疾病无法参加者可凭医院证明申请替代方案。</div>
+</div>
+
+
+<!-- ==================== 高校详细信息表 ==================== -->
+<div class="section" id="university-table" data-section="34校招生信息总表">
+  <h2><span class="sec-icon">🏫</span> 34所高校详细招生信息（物理类）</h2>
+  
+  <div class="filter-bar no-print">
+    <input type="text" class="search-input" id="searchInput" placeholder="🔍 搜索学校名称或专业..." oninput="filterTable()">
+    <button class="filter-btn active" onclick="filterCategory('all', this)">全部 (33)</button>
+    <button class="filter-btn" onclick="filterCategory('top6', this)">Top 顶尖 (6)</button>
+    <button class="filter-btn" onclick="filterCategory('c9', this)">华五/C9 (9)</button>
+    <button class="filter-btn" onclick="filterCategory('zhongjian', this)>中坚校 (9)</button>
+    <button class="filter-btn" onclick="filterCategory('other', this)">其他 (9)</button>
+    <button class="filter-btn" onclick="filterCategory('new', this)">2026新增 (2)</button>
+  </div>
+
+  <div class="table-wrap">
+    <table id="uniTable">
+      <thead>
+        <tr>
+          <th>#</th><th>高校</th><th>层次</th><th>2026招生专业</th><th>广东<br>计划</th><th>分组</th><th>入围模式</th>
+          <th>2025<br>入围分</th><th>估算<br>原始分</th><th>正常批<br>投档分</th><th>分差</th><th>学科评级</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-category="top6 c9"><td>1</td><td><strong>清华大学</strong></td><td><span class="tag tag-red">Top2</span></td><td>数学、物理、化学、生物、信计、力学<span class="tag tag-orange">新</span></td><td><strong>17</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span></td><td>677</td><td>677</td><td>685</td><td class="diff-neg">−8</td><td><span class="rank-A+">A+</span><span class="rank-A+">A+</span><span class="rank-A+">A+</span><span class="rank-A+">A+</span></td></tr>
+        <tr data-category="top6 c9"><td>2</td><td><strong>北京大学</strong></td><td><span class="tag tag-red">Top2</span></td><td>数物化生力类、哲史考古古文</td><td><strong>15</strong></td><td>物/历分</td><td><span class="tag tag-blue">裸分</span></td><td>676</td><td>676</td><td>683</td><td class="diff-neg">−7</td><td><span class="rank-A+">A+</span><span class="rank-A+">A+</span><span class="rank-A+">A+</span><span class="rank-A+">A+</span></td></tr>
+        <tr data-category="top6 c9 zhongjian"><td>3</td><td><strong>上海交大</strong></td><td><span class="tag tag-red">C9·华五</span></td><td>数学、物理、化学、生物、船舶<span class="tag tag-orange">新</span></td><td><strong>10</strong></td><td>I/II组</td><td><span class="tag tag-purple">复交南</span></td><td>668</td><td>668</td><td>678</td><td class="diff-neg">−10</td><td><span class="rank-A+">A+</span><span class="rank-A+">A+</span><span class="rank-A">A</span></td></tr>
+        <tr data-category="top6 c9 zhongjian"><td>4</td><td><strong>复旦大学</strong></td><td><span class="tag tag-red">C9·华五</span></td><td>数学、物理、化学、生物、古文字</td><td><strong>10</strong></td><td>I/II组</td><td><span class="tag tag-purple">复交南</span></td><td>666</td><td>666</td><td>675</td><td class="diff-neg">−9</td><td><span class="rank-A+">A+</span><span class="rank-A+">A+</span><span class="rank-A+">A+</span></td></tr>
+        <tr data-category="c9 zhongjian"><td>5</td><td><strong>浙江大学</strong></td><td><span class="tag tag-red">C9·华五</span></td><td>数学、物理、化学、生物、力学、生医<span class="tag tag-orange">新</span></td><td><strong>12</strong></td><td>I/II组</td><td><span class="tag tag-purple">复交南</span></td><td>665</td><td>665</td><td>672</td><td class="diff-neg">−7</td><td><span class="rank-A+">A+</span><span class="rank-A+">A+</span><span class="rank-A+">A+</span><span class="rank-A+">A+</span></td></tr>
+        <tr data-category="c9 zhongjian"><td>6</td><td><strong>南京大学</strong></td><td><span class="tag tag-red">C9·华五</span></td><td>数学、物理、化学、生物、计算机<span class="tag tag-orange">新</span>、天文、古文字</td><td><strong>10</strong></td><td>I/II组</td><td><span class="tag tag-purple">复交南</span></td><td>660</td><td>660</td><td>668</td><td class="diff-neg">−8</td><td><span class="rank-A+">A+</span><span class="rank-A+">A+</span><span class="rank-A+">A+</span></td></tr>
+        <tr data-category="c9 zhongjian"><td>7</td><td><strong>中国科大</strong></td><td><span class="tag tag-red">C9</span></td><td>数学、物理、化学、生物、力学、核工</td><td><strong>8</strong></td><td>物理组</td><td><span class="tag tag-purple">复交南</span></td><td>658</td><td>658</td><td>666</td><td class="diff-neg">−8</td><td><span class="rank-A+">A+</span><span class="rank-A+">A+</span><span class="rank-A+">A+</span></td></tr>
+        <tr data-category="zhongjian"><td>8</td><td><strong>北航</strong></td><td><span class="tag tag-blue">985·国防</span></td><td>数学、物理、化学、力学、飞动<span class="tag tag-orange">新</span></td><td><strong>8</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span></td><td>640</td><td>640</td><td>650</td><td class="diff-neg">−10</td><td><span class="rank-A">A</span><span class="rank-A">A</span></td></tr>
+        <tr data-category="zhongjian"><td>9</td><td><strong>同济</strong></td><td><span class="tag tag-blue">985·华东</span></td><td>数学、物理、化学、生物、力学</td><td><strong>8</strong></td><td>I/II组</td><td><span class="tag tag-purple">复交南</span></td><td>635</td><td>635</td><td>645</td><td class="diff-neg">−10</td><td><span class="rank-A+">A+</span><span class="rank-A">A</span></td></tr>
+        <tr data-category="zhongjian"><td>10</td><td><strong>哈工大</strong></td><td><span class="tag tag-blue">985·C9联</span></td><td>数学、物理、核工、飞造<span class="tag tag-orange">新</span></td><td><strong>10</strong></td><td>物理类</td><td><span class="tag tag-purple">复交南</span><br><span class="tag tag-orange">加权</span></td><td><em>加权648</em></td><td>~635</td><td>648</td><td class="diff-neg">−13</td><td><span class="rank-A">A</span><span class="rank-A">A</span></td></tr>
+        <tr data-category="zhongjian"><td>11</td><td><strong>武汉大学</strong></td><td><span class="tag tag-blue">985·华中</span></td><td>数学、物理、化学、生物</td><td><strong>10</strong></td><td>物理组</td><td><span class="tag tag-purple">复交南</span></td><td>628</td><td>628</td><td>638</td><td class="diff-neg">−10</td><td><span class="rank-A">A</span><span class="rank-A">A</span></td></tr>
+        <tr data-category="zhongjian"><td>12</td><td><strong>华中科大</strong></td><td><span class="tag tag-blue">985·华中</span></td><td>数学、物理、化学、生物</td><td><strong>10</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span></td><td>630</td><td>630</td><td>640</td><td class="diff-neg">−10</td><td><span class="rank-A">A</span><span class="rank-A+">A+</span><span class="rank-A">A</span></td></tr>
+        <tr data-category="zhongjian"><td>13</td><td><strong>南开大学</strong></td><td><span class="tag tag-blue">985·华北</span></td><td>数学、物理、化学、生物</td><td><strong>8</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span><br><span class="tag tag-orange">加权</span></td><td><em>加权618</em></td><td>~603</td><td>625</td><td class="diff-neg">−22</td><td><span class="rank-A+">A+</span><span class="rank-A">A</span><span class="rank-A">A</span></td></tr>
+        <tr data-category="zhongjian"><td>14</td><td><strong>中山大学</strong></td><td><span class="tag tag-green">985·省内</span></td><td>数学、物理、化学、生物、生态<span class="tag tag-orange">新</span>、基医<span class="tag tag-orange">新</span></td><td><strong>44</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span></td><td>610</td><td>610</td><td>632</td><td class="diff-neg">−22</td><td><span class="rank-A">A</span><span class="rank-A">A</span><span class="rank-A+">A+</span><span class="rank-A+">A+</span></td></tr>
+        <tr data-category="zhongjian"><td>15</td><td><strong>西安交大</strong></td><td><span class="tag tag-blue">985·C9联</span></td><td>数学、物理、核工、生物技</td><td><strong>8</strong></td><td>物理类</td><td><span class="tag tag-purple">复交南</span></td><td>615</td><td>615</td><td>625</td><td class="diff-neg">−10</td><td><span class="rank-A">A</span><span class="rank-A">A</span></td></tr>
+        <tr data-category="zhongjian"><td>16</td><td><strong>东南大学</strong></td><td><span class="tag tag-blue">985·华东</span></td><td>数学、物理、化学</td><td><strong>6</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span></td><td>620</td><td>620</td><td>630</td><td class="diff-neg">−10</td><td><span class="rank-A">A</span></td></tr>
+        <tr data-category="zhongjian"><td>17</td><td><strong>华南理工</strong></td><td><span class="tag tag-green">985·省内</span></td><td>数学、化学</td><td><strong>20</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span><br><span class="tag tag-orange">加权</span></td><td><em>加权592</em></td><td>~578</td><td>598</td><td class="diff-neg">−20</td><td><span class="rank-A-">A-</span></td></tr>
+        <tr data-category="other"><td>18</td><td><strong>天津大学</strong></td><td><span class="tag tag-gray">985</span></td><td>数学、化学、生物、力学</td><td><strong>6</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span></td><td>608</td><td>608</td><td>618</td><td class="diff-neg">−10</td><td><span class="rank-A">A</span><span class="rank-A">A</span></td></tr>
+        <tr data-category="other"><td>19</td><td><strong>北师大</strong></td><td><span class="tag tag-gray">985</span></td><td>数学、物理、化学、生物</td><td><strong>8</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span></td><td>615</td><td>615</td><td>625</td><td class="diff-neg">−10</td><td><span class="rank-A+">A+</span><span class="rank-A">A</span></td></tr>
+        <tr data-category="other"><td>20</td><td><strong>北理工</strong></td><td><span class="tag tag-gray">985</span></td><td>数学、物理、化学</td><td><strong>8</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span><br><span class="tag tag-orange">加权</span></td><td><em>加权615</em></td><td>~600</td><td>615</td><td class="diff-neg">−15</td><td><span class="rank-A">A</span></td></tr>
+        <tr data-category="other"><td>21</td><td><strong>山东大学</strong></td><td><span class="tag tag-gray">985</span></td><td>数学、物理、化学、生物</td><td><strong>8</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span></td><td>585</td><td>585</td><td>605</td><td class="diff-neg">−20</td><td><span class="rank-A+">A+</span><span class="rank-A-">A-</span></td></tr>
+        <tr data-category="other"><td>22</td><td><strong>四川大学</strong></td><td><span class="tag tag-gray">985</span></td><td>数学、物理、化学、生物、力学</td><td><strong>8</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span></td><td>600</td><td>600</td><td>615</td><td class="diff-neg">−15</td><td><span class="rank-A">A</span><span class="rank-A-">A-</span></td></tr>
+        <tr data-category="other"><td>23</td><td><strong>吉林大学</strong></td><td><span class="tag tag-gray">985</span></td><td>数学、物理、化学、生物</td><td><strong>6</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span><br><span class="tag tag-orange">加权</span></td><td><em>加权562</em></td><td>~550</td><td>575</td><td class="diff-neg">−25</td><td><span class="rank-A-">A-</span><span class="rank-A-">A-</span></td></tr>
+        <tr data-category="other"><td>24</td><td><strong>湖南大学</strong></td><td><span class="tag tag-gray">985</span></td><td>数学、化学</td><td><strong>6</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span><br><span class="tag tag-orange">加权</span></td><td><em>加权545</em></td><td>~535</td><td>565</td><td class="diff-neg">−30</td><td><span class="rank-A-">A-</span></td></tr>
+        <tr data-category="other"><td>25</td><td><strong>中南大学</strong></td><td><span class="tag tag-gray">985</span></td><td>数学、物理、化学、生物</td><td><strong>8</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span><br><span class="tag tag-orange">加权</span></td><td><em>加权572</em></td><td>~560</td><td>588</td><td class="diff-neg">−28</td><td><span class="rank-A-">A-</span></td></tr>
+        <tr data-category="other"><td>26</td><td><strong>大连理工</strong></td><td><span class="tag tag-gray">985</span></td><td>数学、物理、化学、力学</td><td><strong>6</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span><br><span class="tag tag-orange">加权</span></td><td><em>加权580</em></td><td>~568</td><td>588</td><td class="diff-neg">−20</td><td><span class="rank-A-">A-</span></td></tr>
+        <tr data-category="other"><td>27</td><td><strong>重庆大学</strong></td><td><span class="tag tag-gray">985</span></td><td>数学、物理、化学</td><td><strong>6</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span><br><span class="tag tag-orange">加权</span></td><td><em>加权575</em></td><td>~562</td><td>582</td><td class="diff-neg">−20</td><td><span class="rank-A-">A-</span></td></tr>
+        <tr data-category="other"><td>28</td><td><strong>电子科大</strong></td><td><span class="tag tag-gray">985</span></td><td>应用物理学</td><td><strong>6</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span><br><span class="tag tag-orange">加权</span></td><td><em>加权585</em></td><td>~572</td><td>598</td><td class="diff-neg">−26</td><td><span class="rank-A-">A-</span></td></tr>
+        <tr data-category="other"><td>29</td><td><strong>厦门大学</strong></td><td><span class="tag tag-gray">985</span></td><td>数学、物理、化学、生物</td><td><strong>8</strong></td><td>物理组</td><td><span class="tag tag-purple">复交南</span></td><td>608</td><td>608</td><td>620</td><td class="diff-neg">−12</td><td><span class="rank-A">A</span><span class="rank-A">A</span><span class="rank-A">A</span></td></tr>
+        <tr data-category="other"><td>30</td><td><strong>东北大学</strong></td><td><span class="tag tag-gray">985</span></td><td>数学、物理、化学</td><td><strong>5</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span></td><td>575</td><td>575</td><td>590</td><td class="diff-neg">−15</td><td><span class="rank-A-">A-</span></td></tr>
+        <tr data-category="other"><td>31</td><td><strong>兰州大学</strong></td><td><span class="tag tag-gray">985</span></td><td>数学、物理、化学、生物</td><td><strong>6</strong></td><td>物理组</td><td><span class="tag tag-purple">复交南</span></td><td>565</td><td>565</td><td>578</td><td class="diff-neg">−13</td><td><span class="rank-A-">A-</span><span class="rank-A">A</span><span class="rank-A">A</span></td></tr>
+        <tr data-category="other new"><td>32</td><td><strong>华东师范</strong></td><td><span class="tag tag-purple">985·新增</span></td><td>数学、物理、生物</td><td><strong>5</strong></td><td>物理组</td><td><span class="tag tag-blue">裸分</span></td><td><em>暂无</em></td><td><em>待公布</em></td><td>615</td><td><em>—</em></td><td><span class="rank-A+">A+</span><span class="rank-A-">A-</span></td></tr>
+        <tr data-category="other new"><td>33</td><td><strong>西北工大</strong></td><td><span class="tag tag-purple">985·新增</span></td><td>数学、物理、化学、航天<span class="tag tag-orange">新</span></td><td><strong>5</strong></td><td>物理组</td><td><span class="tag tag-purple">复交南</span></td><td><em>暂无</em></td><td><em>待公布</em></td><td>598</td><td><em>—</em></td><td><span class="rank-A">A</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="margin-top:16px;padding:14px;background:#f5f7ff;border-radius:10px;font-size:13px;color:#555;border:1px solid #e8eaf6">
+    <strong>📊 表格说明：</strong><br>
+    • <strong>分差 = 强基入围原始分(估) − 正常批次投档分</strong>，负值=有降分空间<br>
+    • 加权入围校的原始分为<strong>估算值</strong>(已加入修正)，仅供参考<br>
+    • 学科评级=<strong>第五轮评估</strong>：A+(前2%) / A(2%-5%) / A-(5%-10%)<br>
+    • <span class="tag tag-orange">新</span>=2026新增专业 | <span class="tag tag-purple">新增</span>=首次在粤招生<br>
+    • 正常批次投档分参考2025年广东省本科普通批(物理类)<br>
+    • <strong>中国人民大学</strong>因仅招收哲学/历史学(文科专业)，未列入本物理类表格<br>
+    • 数据来源：各高校2026简章、阳光高考网、广东省教育考试院
+  </div>
+</div>
+
+
+<!-- ==================== 分数线对比分析 ==================== -->
+<div class="section" id="score-analysis" data-section="分数线对比分析">
+  <h2><span class="sec-icon">📊</span> 分数线对比分析</h2>
+  
+  <h3>🏆 降分空间排行榜 TOP 10（性价比之选）</h3>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>排名</th><th>高校</th><th>强基入围(估)</th><th>正常批次</th><th>分差</th><th>分析与建议</th></tr></thead>
+    <tbody>
+      <tr><td>🥇1</td><td><strong>湖南大学</strong></td><td>~535</td><td>565</td><td class="diff-neg" style="font-size:18px"><strong>−30</strong></td><td>985性价比之王。540~570分段冲刺985首选。化学为强势学科。</td></tr>
+      <tr><td>🥈2</td><td><strong>中南大学</strong></td><td>~560</td><td>588</td><td class="diff-neg" style="font-size:18px"><strong>−28</strong></td><td>粉末冶金全球前三，医学交叉丰富。560~590分段优选。</td></tr>
+      <tr><td>🥉3</td><td><strong>吉林大学</strong></td><td>~550</td><td>575</td><td class="diff-neg" style="font-size:18px"><strong>−25</strong></td><td>东北最大综合大学，理论化学底蕴深厚。性价比极高。</td></tr>
+      <tr><td>4</td><td><strong>电子科大</strong></td><td>~572</td><td>598</td><td class="diff-neg" style="font-size:17px"><strong>−26</strong></td><td>仅应用物理学一个强基专业，但电子信息领域声誉加持巨大。</td></tr>
+      <tr><td>5</td><td><strong>南开大学</strong></td><td>~603</td><td>625</td><td class="diff-neg" style="font-size:17px"><strong>−22</strong></td><td>数学A+！加权公式利好数理强者。600~625分段冲南开的好机会。</td></tr>
+      <tr><td>6</td><td><strong>中山大学</strong></td><td>610</td><td>632</td><td class="diff-neg" style="font-size:17px"><strong>−22</strong></td><td>省内主场优势最大（44人）。基础医学A+、生态学A+。</td></tr>
+      <tr><td>7</td><td><strong>华南理工</strong></td><td>~578</td><td>598</td><td class="diff-neg" style="font-size:17px"><strong>−20</strong></td><td>省内第二选择（20人）。580~600分段留省内读985的首选。</td></tr>
+      <tr><td>8</td><td><strong>山东大学</strong></td><td>585</td><td>605</td><td class="diff-neg" style="font-size:16px"><strong>−20</strong></td><td>数学A+（潘承洞传承），密码学独特方向。590~610分段适用。</td></tr>
+      <tr><td>9</td><td><strong>大连理工</strong></td><td>~568</td><td>588</td><td class="diff-neg" style="font-size:16px"><strong>−20</strong></td><td>东北工科重镇，精细化工知名。570~590分段适用。</td></tr>
+      <tr><td>10</td><td><strong>重庆大学</strong></td><td>~562</td><td>582</td><td class="diff-neg" style="font-size:16px"><strong>−20</strong></td><td>西南工科重镇，储能科学新兴方向。565~585分段适用。</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>🏛️ 顶尖名校降分空间（清北复交浙科）</h3>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>高校</th><th>强基入围</th><th>正常批次</th><th>分差</th><th>简评</th></tr></thead>
+    <tbody>
+      <tr><td><strong>清华</strong></td><td>677</td><td>685</td><td class="diff-neg"><strong>−8</strong></td><td>Top2降分最小但仍可观</td></tr>
+      <tr><td><strong>北大</strong></td><td>676</td><td>683</td><td class="diff-neg"><strong>−7</strong></td><td>略优于清华</td></tr>
+      <tr><td><strong>上海交大</strong></td><td>668</td><td>678</td><td class="diff-neg"><strong>−10</strong></td><td>船舶新专业值得关注</td></tr>
+      <tr><td><strong>复旦</strong></td><td>666</td><td>675</td><td class="diff-neg"><strong>−9</strong></td><td>基础学科实力顶尖</td></tr>
+      <tr><td><strong>浙大</strong></td><td>665</td><td>672</td><td class="diff-neg"><strong>−7</strong></td><td>生物医学工程A+极具吸引力</td></tr>
+      <tr><td><strong>中国科大</strong></td><td>658</td><td>666</td><td class="diff-neg"><strong>−8</strong></td><td>理科氛围最佳</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="tip-box tip-orange">
+    💡 <strong>关键洞察：</strong>顶尖名校降分虽然不如中游985大（通常7~10分），但<strong>越高的分数段每分含金量越高</strong>。670附近差8分可能是"清北无缘"和"踏入清华园"的天壤之别。
+  </div>
+</div>
+
+
+<!-- ==================== 重点研究方向 ==================== -->
+<div class="section" id="research" data-section="重点研究方向 & 培养特色">
+  <h2><span class="sec-icon">🔬</span> 各校重点研究方向 & 培养特色</h2>
+  <p style="margin-bottom:14px;color:#666">围绕国家战略需求设置的特色培养项目和重点方向。</p>
+
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>高校</th><th>强基专业</th><th>特色培养/重点项目</th></tr></thead>
+    <tbody>
+      <tr><td><strong>清华</strong></td><td>数/物/化/生/信计/力学</td><td><span class="tag tag-blue">丘成桐领军计划</span> <span class="tag tag-blue">姚班/智班</span> <span class="tag tag-orange">量子信息</span> <span class="tag tag-orange">脑科学与AI</span> <span class="tag tag-green">合成生物学</span></td></tr>
+      <tr><td><strong>北大</strong></td><td>数/物/化/生/力/哲史考古古文</td><td><span class="rank-A+">图灵班</span> <span class="tag tag-blue">元培学院</span> <span class="tag tag-orange">前沿交叉学科研究院</span> <span class="tag tag-orange">量子科学</span> <span class="tag tag-green">大数据</span></td></tr>
+      <tr><td><strong>复旦</strong></td><td>数/物/化/生/古文字</td><td><span class="tag tag-blue">"卓学计划"</span> <span class="tag tag-orange">计算神经科学</span> <span class="tag tag-orange">系统生物学</span> <span class="tag tag-green">集成电路</span></td></tr>
+      <tr><td><strong>上海交大</strong></td><td>数/物/化/生/船舶</td><td><span class="tag tag-blue">"致远学院"</span> <span class="tag tag-orange">海洋工程(全国第一)</span> <span class="tag tag-green">人工智能</span> <span class="tag tag-green">生物医药</span></td></tr>
+      <tr><td><strong>中国科大</strong></td><td>数/物/化/生/力/核工</td><td><span class="rank-A+">"华罗庚班"</span> <span class="rank-A+">"严济慈班"/"卢嘉锡班"</span> <span class="tag tag-orange">量子信息</span> <span class="tag tag-green">核聚变能源</span></td></tr>
+      <tr><td><strong>南京大学</strong></td><td>数/物/化/生/计算机/天文/古文字</td><td><span class="tag tag-blue">"拔尖计划2.0"</span> <span class="tag tag-orange">天文学(国内领先)</span> <span class="tag tag-green">AI强化</span> 匡亚明学院管理</td></tr>
+      <tr><td><strong>浙大</strong></td><td>数/物/化/生/力学/生医</td><td><span class="tag tag-blue">"竺可桢学院"</span> <span class="tag tag-orange">生物医学(A+第一)</span> <span class="tag tag-green">脑机接口</span> <span class="tag tag-green">智能机器人</span></td></tr>
+      <tr><td><strong>中山大学</strong></td><td>数/物/化/生/生态/基医</td><td><span class="tag tag-blue">"逸仙计划"</span> <span class="rank-A+">天琴计划(引力波)</span> <span class="tag tag-orange">热带医学</span> <span class="tag tag-green">精准医学</span> 粤港澳区位</td></tr>
+      <tr><td><strong>华南理工</strong></td><td>数学、化学</td><td><span class="tag tag-blue">"未来技术学院"</span> <span class="tag tag-orange">新材料新能源</span> <span class="tag tag-green">软物质</span> 广州国际化校区</td></tr>
+      <tr><td><strong>北航</strong></td><td>数/物/化/力学/飞动</td><td><span class="tag tag-blue">"沈元荣誉学院"</span> <span class="tag tag-orange">空天动力</span> <span class="tag tag-green">无人系统</span> <span class="tag tag-green">深空探测</span> 国防军工背景</td></tr>
+      <tr><td><strong>哈工大</strong></td><td>数/物/核工/飞造</td><td><span class="tag tag-blue">"永坦班"</span> <span class="tag tag-orange">航天工程("工程师摇篮")</span> <span class="tag tag-green">无人机</span> 国防七子之首</td></tr>
+      <tr><td><strong>同济</strong></td><td>数/物/化/生/力学</td><td><span class="tag tag-blue">"国豪书院"</span> <span class="tag tag-orange">智慧交通</span> <span class="tag tag-green">先进材料</span> 土木传统向基础延伸</td></tr>
+      <tr><td><strong>南开</strong></td><td>数/物/化/生</td><td><span class="tag tag-blue">"伯苓班"(四个方向)</span> <span class="tag tag-orange">统计与数据科学</span> 陈省身数学所</td></tr>
+      <tr><td><strong>武大</strong></td><td>数/物/化/生</td><td><span class="tag tag-blue">"弘毅学堂"</span> <span class="tag tag-orange">遥感(全球领先)</span> <span class="tag tag-green">病毒学</span> 珞珈山氛围</td></tr>
+      <tr><td><strong>华科大</strong></td><td>数/物/化/生</td><td><span class="tag tag-blue">"启明学院"</span> <span class="tag tag-orange">光学工程(A+)</span> <span class="tag tag-orange">生物医学(P4实验室)</span> <span class="tag tag-green">网络安全</span></td></tr>
+      <tr><td><strong>西交</strong></td><td>数/物/核工/生技</td><td><span class="tag tag-blue">"钱学森学院"</span> <span class="tag tag-orange">能源动力(王牌)</span> <span class="tag tag-green">储能技术</span> 西部科创港</td></tr>
+      <tr><td><strong>北师大</strong></td><td>数/物/化/生</td><td><span class="tag tag-blue">"励耘学院"</span> <span class="tag tag-orange">认知神经科学</span> <span class="tag tag-green">教育交叉</span> 文理并重</td></tr>
+      <tr><td><strong>成电</strong></td><td>应用物理</td><td><span class="tag tag-blue">"英才计划"</span> <span class="tag tag-orange">集成电路</span> <span class="tag tag-orange">电磁场微波</span> <span class="tag tag-green">量子信息</span> 两电之首</td></tr>
+      <tr><td><strong>东南</strong></td><td>数/物/化</td><td><span class="tag tag-blue">"吴健雄学院"</span> <span class="tag tag-orange">5G/6G通信</span> <span class="tag tag-green">生物电子</span> 通信电子传统强校</td></tr>
+      <tr><td><strong>川大</strong></td><td>数/物/化/生/力学</td><td><span class="tag tag-blue">"吴玉章学院"</span> <span class="tag tag-orange">口腔辐射</span> <span class="tag tag-green">深地/灾害预警</span> 西南龙头</td></tr>
+      <tr><td><strong>山大</strong></td><td>数/物/化/生</td><td><span class="tag tag-blue">"泰山学堂"</span> <span class="tag tag-orange">密码学(特色)</span> <span class="tag tag-green">晶体材料</span> 潘承洞学派</td></tr>
+      <tr><td><strong>厦大</strong></td><td>数/物/化/生</td><td><span class="tag tag-blue">"萨本栋微纳院"</span> <span class="tag tag-orange">海洋化学(特色)</span> <span class="tag tag-green">催化科学</span> 海峡区位</td></tr>
+      <tr><td><strong>天大</strong></td><td>数/化/生/力学</td><td><span class="tag tag-blue">"求是学部"</span> <span class="tag tag-orange">化工新材料</span> <span class="tag tag-green">储能科学</span> 工科底蕴雄厚</td></tr>
+      <tr><td><strong>东北</strong></td><td>数/物/化</td><td><span class="tag tag-blue">"郎世俊班"</span> <span class="tag tag-orange">冶金材料</span> <span class="tag tag-green">工业智能</span> 老牌工科</td></tr>
+      <tr><td><strong>大工</strong></td><td>数/物/化/力学</td><td><span class="tag tag-blue">"华罗庚班"</span> <span class="tag tag-orange">精细化工</span> <span class="tag tag-green">计算力学</span> 东北工科重镇</td></tr>
+      <tr><td><strong>重大</strong></td><td>数/物/化</td><td><span class="tag tag-blue">"弘深学院"</span> <span class="tag tag-orange">储能科学</span> <span class="tag tag-green">量子材料</span> 西南工科基地</td></tr>
+      <tr><td><strong>吉大</strong></td><td>数/物/化/生</td><td><span class="tag tag-blue">"唐敖庆班"</span> <span class="tag tag-orange">理论化学(唐开创)</span> <span class="tag tag-green">汽车材料</span> 东北规模最大</td></tr>
+      <tr><td><strong>兰大</strong></td><td>数/物/化/生</td><td><span class="tag tag-blue">"萃英学院"</span> <span class="tag tag-orange">草地农业生态(世界级)</span> <span class="tag tag-green">核科学/敦煌学</span> 西部科研重镇</td></tr>
+      <tr><td><strong>湖大</strong></td><td>数学、化学</td><td><span class="tag tag-blue">"岳麓书院"</span> <span class="tag tag-orange">化工/工业设计</span> <span class="tag tag-green">超算</span> 千年学府</td></tr>
+      <tr><td><strong>中南</strong></td><td>数/物/化/生</td><td><span class="tag tag-blue">"升华育才班"</span> <span class="tag tag-orange">粉末冶金(全球前3)</span> <span class="tag tag-green">轨道交通</span> 湘雅支撑医工结合</td></tr>
+      <tr><td><strong>华东师范</strong></td><td>数/物/生</td><td><span class="tag tag-blue">"卓越计划"</span> <span class="tag tag-orange">统计学(A+)</span> <span class="tag tag-green">认知神经/教育技术</span> 2026新增在粤</td></tr>
+      <tr><td><strong>西北工大</strong></td><td>数/物/化/航天</td><td><span class="tag tag-blue">"三航科技"(海/空/天)</span> <span class="tag tag-orange">无人机(全国绝对第一)</span> <span class="tag tag-green">水下航行器</span> 2026新增在粤</td></tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+
+<!-- ==================== 录取后政策 ==================== -->
+<div class="section" id="post-policy" data-section="录取后限定性政策">
+  <h2><span class="sec-icon">⚖️</span> 强基计划录取后的限定性政策</h2>
+
+  <h3>一、转专业限制</h3>
+  <div class="policy-card">
+    <h4>🚫 教育部刚性规定</h4>
+    <p>强基计划录取学生<strong>原则上不得转入非强基计划专业</strong>。各校必须执行此约束。</p>
+  </div>
+  
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>限制级别</th><th>代表学校</th><th>执行细则</th></tr></thead>
+    <tbody>
+      <tr><td><span class="tag tag-red">严格限制</span></td><td>清华、北大、复旦、中科大、浙大、南大</td><td>完全不允许转出强基计划。即使在校表现优异也不能转入计算机/金融等热门专业。只能在强基内部调整细分方向。</td></tr>
+      <tr><td><span class="tag tag-orange">有限弹性</span></td><td>中大、华南理工、武大、华科大、川大、吉大</td><td>不允许转出到普通专业，但允许在强基相关专业间流转（如数学↔物理、化学↔材料）。达到GPA条件后可转入相关交叉学科项目。</td></tr>
+      <tr><td><span class="tag tag-yellow">相对宽松</span></td><td>部分中游985高校</td><td>满足条件后（GPA前列+通过考核）可申请转入相关联的交叉学科或新兴专业（如物理→光电信息工程）。操作难度不小。</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>二、动态进出机制</h3>
+  <div class="tip-box tip-red">⚠️ 动态进出是真实严肃的制度！阶段性考核 + 动态进出，每学期/每学年一次学业评估。</div>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>考核周期</th><th>考核内容</th><th>不合格处理</th></tr></thead>
+    <tbody>
+      <tr><td><strong>每学期末</strong></td><td>GPA、核心课成绩、科研参与度、导师评价</td><td>首警 + 制定帮扶改进计划</td></tr>
+      <tr><td><strong>每学年末</strong></td><td>学年综合评定（学业+科研+素质）</td><td>连续两次不合格 → <strong>退出强基班</strong>，转普通班</td></tr>
+      <tr><td><strong>大二末</strong></td><td>中期分流考核（重大关口）</td><td>未通过 → 失去本硕博衔接资格</td></tr>
+      <tr><td><strong>大三末</strong></td><td>推免资格审核</td><td>未达标 → 失去保研/直博资格</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="tip-box tip-blue">💡 大多数学校淘汰率并不夸张（通常5%~15%/年），认真学习即可留在强基班。真正的挑战在于<strong>保持持续的学术热情</strong>。</div>
+
+  <h3>三、本硕博衔接</h3>
+  <div class="tip-box tip-green">✨ 这是强基最具吸引力的福利！</div>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>培养模式</th><th>代表学校</th><th>安排</th></tr></thead>
+    <tbody>
+      <tr><td><strong>3+X</strong></td><td>清北、复旦、中科大</td><td>3年本科+X年研究生，本科阶段即修研究生课程</td></tr>
+      <tr><td><strong>4+X</strong></td><td>大多数高校</td><td>4年本科+X年研究生，大四接触科研课题</td></tr>
+      <tr><td><strong>直博通道</strong></td><td>清北复交浙科</td><td>符合条件的可直接申请博士（跳过硕士阶段）</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>保研/直博条件（各校大同小异）：</strong>GPA达前50%~70% | 完成科研训练学分 | 通过中期分流考核 | 无学术不端 | 导师同意接收</p>
+  <div class="tip-box tip-orange">💡 "本硕博衔接" ≠ "自动保研"！它只是提供更顺畅的通道和更高保研率，仍需达标才能享受。</div>
+
+  <h3>四、其他限定政策</h3>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>事项</th><th>详细说明</th></tr></thead>
+    <tbody>
+      <tr><td><strong>入学复核</strong></td><td>部分学校入学后有简单复核（成绩真实性、体检复查），极少取消资格</td></tr>
+      <tr><td><strong>不可放弃</strong></td><td>系统确认录取后不能反悔。不去报到可能影响次年高考报名（各省政策不同）</td></tr>
+      <tr><td><strong>不能兼报</strong></td><td>强基录取后不能同时被综评、高校专项等其他特殊类型录取</td></tr>
+      <tr><td><strong>学费</strong></td><td>与同校普通专业相同，部分学校有额外奖学金</td></tr>
+      <tr><td><strong>毕业证书</strong></td><td>毕业证学位证与普通学生完全一致，无"强基"标注</td></tr>
+      <tr><td><strong>就业去向</strong></td><td>政府鼓励从事基础研究和教学工作，但<strong>不强制分配</strong>。自主择业（考研/出国/就业均可）</td></tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+
+<!-- ==================== 2026变化亮点 ==================== -->
+<div class="section" id="changes" data-section="2026变化亮点">
+  <h2><span class="sec-icon">✨</span> 2026年强基计划变化亮点</h2>
+  <div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+    <div class="card" style="border-top-color:#43a047"><div class="card-num" style="color:#2e7d32">+42人</div><div class="card-label">整体扩招</div><div class="card-sub">309→351人 (+13.6%)</div></div>
+    <div class="card" style="border-top-color:#e65100"><div class="card-num" style="color:#e65100">+2所</div><div class="card-label">新增在粤招生</div><div class="card-sub">华东师范<br>西北工大</div></div>
+    <div class="card" style="border-top-color:#7b1fa2"><div class="card-num" style="color:#7b1fa2">8个</div><div class="card-label">新增招生专业</div><div class="card-sub">清华力学·北大力学<br>交大船舶·浙大生医<br>中大生态/基医 等</div></div>
+    <div class="card" style="border-top-color:#1565c0"><div class="card-num" style="color:#1565c0">11所</div><div class="card-label">复交南模式稳定</div><div class="card-sub">高考前校测不变<br>覆盖11所高校</div></div>
+  </div>
+</div>
+
+
+<!-- ==================== 不在广东招生 ==================== -->
+<div class="section" id="not-in-gd" data-section="未在粤招生学校">
+  <h2><span class="sec-icon">🚫</span> 未在广东省招生的强基院校</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>高校</th><th>所在地</th><th>强基专业</th><th>未招生原因</th></tr></thead>
+    <tbody>
+      <tr><td><strong>中国海洋大学</strong></td><td>山东青岛</td><td>化学、生物</td><td>生源布局调整</td></tr>
+      <tr><td><strong>中国农业大学</strong></td><td>北京</td><td>生物科学</td><td>农学专业在粤热度偏低</td></tr>
+      <tr><td><strong>中央民族大学</strong></td><td>北京</td><td>历史、哲学</td><td>少数民族招生为主</td></tr>
+      <tr><td><strong>西北农林科技</strong></td><td>陕西杨凌</td><td>生物科学</td><td>农林业类在粤认可度较低</td></tr>
+      <tr><td><strong>国防科技大学</strong></td><td>湖南长沙</td><td>数/物/核工等</td><td>军事院校，渠道独立</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="tip-box tip-blue">💡 以上5所仍在全国范围开展强基招生，只是未在广东投放名额。</div>
+</div>
+
+
+<!-- ==================== 数据来源 ==================== -->
+<div class="section" id="disclaimer" data-section="数据来源 & 免责声明">
+  <h2><span class="sec-icon">📚</span> 数据来源与免责声明</h2>
+  <h3>数据来源</h3>
+  <ul style="line-height:2">
+    <li>各高校<strong>2026年强基计划招生简章</strong>（官方发布）</li>
+    <li><strong>阳光高考平台</strong>（gaokao.chsi.com.cn）— 教育部指定报名和信息发布平台</li>
+    <li><strong>广东省教育考试院</strong>（eea.gd.gov.cn）— 2025年各批次投档分数线</li>
+    <li>各高校<strong>官方招生网站</strong>发布的2025年强基录取数据</li>
+    <li><strong>教育部第五轮学科评估结果</strong>（公开信息汇总）</li>
+    <li>各大教育媒体整理的校测真题和政策解读</li>
+  </ul>
+  <h3>⚠️ 免责声明</h3>
+  <div class="tip-box tip-red" style="margin:12px 0">
+    <ol style="padding-left:20px;margin:0;line-height:1.9">
+      <li>本文档仅供<strong>信息参考和研究用途</strong>，不构成任何报考决策依据。</li>
+      <li>2025年分数线为历史数据，<strong>不代表2026年实际情况</strong>。</li>
+      <li>加权院校的原始分估算存在误差，以各校当年公布为准。</li>
+      <li>校测真题为回忆版，可能与实际有出入，仅供了解风格。</li>
+      <li>各校2026年简章将在3月底至4月初发布，以<strong>官方最新版本</strong>为准。</li>
+      <li>学科评估信息来源于多方汇总，以教育部公示为准。</li>
+      <li>选科要求基于各校简章和广东省考试院《选科要求指引》整理，以2026年最新公布为准。</li>
+    </ol>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<div class="footer no-print">
+  <p>📊 2026年广东省强基计划高校信息汇总（物理类） | 整理于 2026年4月</p>
+  <p>仅供学习参考，以教育部及各高校官方发布为准 | 祝各位同学金榜题名！🎯</p>
+  <p style="margin-top:8px;font-size:12px;color:#ccc;">Powered by WorkBuddy · 数据来源：阳光高考平台 · 各高校官网 · 广东省教育考试院</p>
+</div>
+
+</div><!-- end main-content -->
+</div><!-- end page-wrapper -->
+
+<!-- 返回顶部按钮 -->
+<button class="back-to-top no-print" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+// ===== FAQ Toggle =====
+document.querySelectorAll('.faq-q').forEach(function(q){
+  q.addEventListener('click', function(){
+    this.parentElement.classList.toggle('open');
+  });
+});
+
+// ===== Sidebar Navigation =====
+function scrollToSection(id){
+  var el=document.getElementById(id);
+  if(el){ el.scrollIntoView({behavior:'smooth',block:'start'}); }
+  // Update active nav item
+  document.querySelectorAll('.nav-item').forEach(function(n){ n.classList.remove('active'); });
+  // Find matching nav item and activate it
+  document.querySelectorAll('.nav-item').forEach(function(n){
+    if(n.getAttribute('onclick').indexOf("'"+id+"'")!==-1){
+      n.classList.add('active');
+    }
+  });
+}
+
+// Scroll spy - auto highlight nav
+var sections=['faq','requirements','subject-req','formulas','exam-questions','university-table','score-analysis','research','post-policy','changes','not-in-gd','disclaimer'];
+window.addEventListener('scroll', function(){
+  var scrollY=window.scrollY;
+  // Back to top button
+  var btt=document.getElementById('backToTop');
+  if(scrollY>400){ btt.classList.add('show'); } else { btt.classList.remove('show'); }
+  // Active section detection
+  if(window.innerWidth>1100){
+    sections.forEach(function(secId){
+      var el=document.getElementById(secId);
+      if(el){
+        var rect=el.getBoundingClientRect();
+        if(rect.top<=120 && rect.bottom>120){
+          document.querySelectorAll('.nav-item').forEach(function(n){ n.classList.remove('active'); });
+          document.querySelectorAll('.nav-item').forEach(function(n){
+            if(n.getAttribute('onclick').indexOf("'"+secId+"'")!==-1){
+              n.classList.add('active');
+            }
+          });
+        }
+      }
+    });
+  }
+});
+
+// ===== Category Filter =====
+function filterCategory(cat, btn){
+  var btns=document.querySelectorAll('.filter-btn');
+  btns.forEach(function(b){ b.classList.remove('active'); });
+  if(btn)btn.classList.add('active');
+  var rows=document.querySelectorAll('#uniTable tbody tr[data-category]');
+  rows.forEach(function(row){
+    if(cat==='all'){row.style.display='';}
+    else if(cat==='new'&&row.getAttribute('data-category').indexOf('new')!==-1){row.style.display='';}
+    else if(row.getAttribute('data-category').indexOf(cat)!==-1||row.getAttribute('data-category').split(' ').indexOf(cat)!==-1){row.style.display='';}
+    else{row.style.display='none';}
+  });
+}
+
+// ===== Search Filter =====
+function filterTable(){
+  var input=document.getElementById('searchInput').value.toLowerCase();
+  var rows=document.querySelectorAll('#uniTable tbody tr');
+  rows.forEach(function(row){
+    if(row.textContent.toLowerCase().indexOf(input)!==-1){row.style.display='';}
+    else{row.style.display='none';}
+  });
+  if(input.length>0){
+    document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('active');});
+  }
+}
+</script>
+
+</body>
+</html>
